@@ -1,0 +1,6 @@
+print(geo_data['latitude'])
+print(geo_data['longitude'])
+print(geo_data['city'])
+print(geo_data['region'])
+print(geo_data['country'])
+print(geo_data['timezone'])

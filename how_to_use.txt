@@ -1,0 +1,43 @@
+
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+first decompress other two zip files 
+1)scream_detection_other_files.zip
+2)scream_detection_other_files_part_2.zip
+
+
+after decompressing them cut or copy their content along with content of this zip file 'scream_detection_main.zip'
+now the the whole project data is in a single folder
+what you have to do next is create a new pycham project for giving the name equivalent to the name of this project
+and install these libraries in that new project
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+1)tensorflow
+2)keras
+3)pandas
+4)tqdm
+5)numpy
+6)librosa
+7)sklearn
+8)psutil
+9)scipy
+10)soundfile
+11)openpyxl
+12)sounddevice
+13)kivy
+14)kivymd
+
+now
+for running this project simply run main.py file
+
+__________________________________________________________________________________________________________________________________________________________________-
+if you want to train this model again (initially it is trained) you will need two extra folders 
+1)positive
+2)negative 
+
+you have to put these folders in the same directory where you will find main.py
+
+
+_________________________________________________________________________________________________________________________________________________________________
+Note:--------- 
+while using this application if you are recording audio using this app then it may be possible that graphics of this app works slow but they will work perfectly give them sometime to make progress.

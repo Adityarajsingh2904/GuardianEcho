@@ -2,10 +2,6 @@
 
 *A real-time smart audio-classification engine that listens, understands, and reacts.*
 
-<p align="center">
-  <img src="resources/images/guardian_ui.png" alt="GuardianEcho UI" width="600">
-</p>
-
 GuardianEcho is an end-to-end **audio-event detection & alerting system**. Using a hybrid of **SVM classifiers** and **deep-learning models** (TensorFlow/Keras), it can distinguish between *speech, screams, shouts, noise* and other categories in real time, then trigger follow-up actions such as notifications, logging or UI cues.
 
 ---

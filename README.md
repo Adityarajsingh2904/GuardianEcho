@@ -27,7 +27,10 @@ GuardianEcho is an end-to-end **audio-event detection & alerting system**. Using
 - **Dataset Builder** – `datasetmaker.py` lets you curate and label custom WAV datasets.  
 - **Extensible UI** – lightweight **Kivy** front-end (`ui.kv`, `main.py`) with live predictions and alert pop-ups.  
 - **Configurable Alerts** – trigger sounds, desktop notifications or custom hooks on defined events.  
-- **Plug-in Friendly** – drop in a new `saved_model.pb` or additional SVM phases without touching the core logic.  
+- **Plug-in Friendly** – drop in a new `saved_model.pb` or additional SVM phases without touching the core logic.
+- **Whisper Transcription** – convert speech to text using OpenAI's Whisper model for improved accuracy.
+- **Voice Command Interface** – interpret spoken commands via HuggingFace Transformers pipelines.
+- **Alert Categorization** – classify doorbells, alarms and other sounds with fine-tuned audio models.
 
 ---
 
@@ -93,6 +96,9 @@ python main.py
 
 # Directly classify a WAV file
 python sound_classifier_nueral.py --file path/to/clip.wav
+
+# Transcribe speech from a WAV file
+python transcription.py path/to/audio.wav
 ```
 
 ---

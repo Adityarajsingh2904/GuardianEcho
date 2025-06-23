@@ -1,0 +1,6 @@
+*.pb binary
+*.wav binary
+*.ttf binary
+*.jpeg binary
+requirements.txt text
+requirements.txt diff

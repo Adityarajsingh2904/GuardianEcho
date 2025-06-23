@@ -3,7 +3,13 @@ import pandas as pd
 from scipy.io.wavfile import read
 def process_file(filename):
     arr = []
-    model = keras.models.load_model('.')
+    try:
+        model = keras.models.load_model('saved_model')
+    except Exception as e:
+        print('Failed to load model:', e)
+        model = None
+    if model is None:
+        return False
     print(filename)
     data, rs = read(filename)
     file = open("input dimension for model.txt", "r")

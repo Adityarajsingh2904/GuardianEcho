@@ -1,7 +1,6 @@
 from sklearn import svm
 import numpy as np
 from sklearn import mixture
-from numpy import genfromtxt
 import pandas as pd
 from sklearn.metrics import accuracy_score
 
@@ -15,8 +14,8 @@ def tetsting_unit( ):
     return tester
 
 
-x_train = genfromtxt('modified_data.csv', delimiter=',')
-y_train = genfromtxt('solution.csv',delimiter=',')
+x_train = pd.read_csv('modified_data.csv', header=None).values
+y_train = pd.read_csv('solution.csv', header=None).values.ravel()
 #print(x_train.shape, y_train.shape)
 clf = svm.SVC(kernel="linear")
 clf.fit(x_train, y_train)

@@ -1,9 +1,7 @@
 from sklearn import svm
-import numpy as np
-from numpy import genfromtxt
 import pandas as pd
 from sklearn.metrics import accuracy_score
-x_train = genfromtxt('speech.csv',delimiter=',')
-y_train = genfromtxt('id_of_it.csv',delimiter=',')
+x_train = pd.read_csv('speech.csv', header=None).values
+y_train = pd.read_csv('id_of_it.csv', header=None).values.ravel()
 second_para = svm.SVC(C=20.0,gamma=0.00001)
 second_para.fit(x_train, y_train)

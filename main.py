@@ -1,3 +1,4 @@
+import argparse
 import datetime
 import sounddevice as sd
 from kivy.uix.checkbox import CheckBox
@@ -270,9 +271,15 @@ class uiApp(MDApp):
             )
         self.dialog.open()
 if __name__ == '__main__':
-    LabelBase.register(name='second',fn_regular='FFF_Tusj.ttf')
-    LabelBase.register(name='first',fn_regular='Pacifico.ttf')
+    parser = argparse.ArgumentParser(description="GuardianEcho launch options")
+    parser.add_argument('--debug', action='store_true',
+                        help='Run the application in debug/testing mode')
+    args = parser.parse_args()
+    if args.debug:
+        print('Running in debug mode...')
 
+    LabelBase.register(name='second', fn_regular='FFF_Tusj.ttf')
+    LabelBase.register(name='first', fn_regular='Pacifico.ttf')
 
     uiApp().run()
     
